@@ -98,6 +98,8 @@ function ShaderToyLite(canvasId) {
     var program = {};   // webgl program
     var location = {}; // uniform location
     var flip = {};      // a b flip
+    var quadBuffer;     // two full screen triangles
+
     
     var setup = () => {
         gl.getExtension( 'OES_texture_float_linear');
